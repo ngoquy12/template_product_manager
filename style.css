@@ -138,7 +138,6 @@ body {
 
 .table-wrapper {
   overflow-x: auto;
-  margin-bottom: 24px;
 }
 
 .product-table {
@@ -248,90 +247,6 @@ body {
   transform: translateY(0);
 }
 
-/* Pagination */
-.pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  padding-top: 16px;
-  border-top: 1px solid var(--border-color);
-}
-
-.pagination-btn {
-  padding: 10px 20px;
-  border: 2px solid var(--border-color);
-  background: var(--card-bg);
-  color: var(--text-primary);
-  border-radius: var(--radius);
-  font-size: 0.95rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.pagination-btn:hover:not(:disabled) {
-  background: var(--primary-color);
-  color: white;
-  border-color: var(--primary-color);
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md);
-}
-
-.pagination-btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-.pagination-info {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-  min-width: 120px;
-  text-align: center;
-}
-
-.pagination-numbers {
-  display: flex;
-  gap: 8px;
-}
-
-.page-number {
-  min-width: 40px;
-  height: 40px;
-  padding: 0 12px;
-  border: 2px solid var(--border-color);
-  background: var(--card-bg);
-  color: var(--text-primary);
-  border-radius: var(--radius);
-  font-size: 0.95rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.page-number:hover {
-  background: var(--primary-color);
-  color: white;
-  border-color: var(--primary-color);
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md);
-}
-
-.page-number.active {
-  background: var(--primary-color);
-  color: white;
-  border-color: var(--primary-color);
-  box-shadow: var(--shadow-md);
-}
-
-.page-number.active:hover {
-  background: var(--primary-hover);
-}
-
 /* Responsive */
 @media (max-width: 768px) {
   .header h1 {
@@ -348,10 +263,6 @@ body {
 
   .table-section {
     padding: 16px;
-  }
-
-  .pagination {
-    flex-wrap: wrap;
   }
 
   .action-buttons {
